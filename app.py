@@ -11,10 +11,10 @@ app = Flask(__name__)
 # MySQL Database Connection
 def get_db_connection():
     return mysql.connector.connect(
-        host="localhost",  
-        user="root",
-        password="root123",
-        database="python_db"
+       'host': 'localhost',
+    'user': 'your_username',
+    'password': 'your_password',
+    'database': 'your_database'
     )
 
 def calculate_user_recipe_space():
